@@ -359,3 +359,6 @@ html * {
     background-color: var(--r-background-color);
   }
 }
+.table {
+  width: 50%;
+}

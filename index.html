@@ -16,8 +16,199 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>SVG</h1>
+				</section>
+
+				<section>
+					<p>
+						<strong>Scalable Vector Graphics (SVG)</strong> are an  XML-based markup language for describing two-dimensional based  vector graphics.
+					</p>
+					<img src="./1655272219feathers-in-colors.svg" width="300px">
+				</section>
+
+				<section>
+					<table>
+						<tr>
+							<th class="table">Advantages</th>
+							<th class="table">Disadvantages</th>
+						</tr>
+						<tr>
+							<td>
+								 <li>
+									small size
+								 </li>
+								 <li>
+									flexibility
+								 </li>
+								 <li>
+									scalability without changing the image quality
+								 </li>
+								 <li>
+									it’s possible to view the contents of the SVG file in any browser 
+								 </li>
+							</td>
+							<td>
+								<li>
+									file size 
+								</li>
+								<li>
+									read only the entire object 
+								</li>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<section>
+						<h1>
+							How to use SVG images
+						</h1>
+					</section>
+					<section>
+						<h3>
+							SVG as an &lt;img&gt;
+						</h3>
+						<table>
+							<tr>
+								<td class="table">&lt;img src = "happy.svg" alt="My Happy SVG"/&gt;</td>
+								<td class="table">
+									<em>Advantages:</em>
+									<li>
+										SVG animations and filters are supported
+									</li>
+									<em>Disadvantages:</em>
+									<li>
+										you can't change the properties of SVG elements via CSS or JS
+									</li>
+									<li>
+										interactive animations are not supported
+									</li>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>
+							SVG as an CSS background-image
+						</h3>
+						<table>
+							<tr>
+								<td class="table">
+									<p>&lt;body&gt; {</p> 
+									<p> background-image: url(happy.svg)</p>
+									<p> }</p>
+									<p>&lt;/body&gt;</p>
+								</td>
+								<td class="table">
+									<em>Advantages:</em>
+									<li>
+										SVG animations and filters are supported
+									</li>
+									<li>
+										you can use SVG sprites
+									</li>
+									<em>Disadvantages:</em>
+									<li>
+										you can't change the properties of SVG elements via CSS or JS
+									</li>
+									<li>
+										interactive animations are not supported
+									</li>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>
+							inline SVG images
+						</h3>
+						<div>
+							<p>&lt;body&gt;</p> 
+ 							<p>&lt;svg id=P1 width="256" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;</p> 
+    					<p>&lt;path d="m 133.08501,28.75909 a 7.4746049,7.4746049 0 0 0 -11.54314,11.21164 l 108.25569,0 108.25576,0 a 7.4746049,7.4746049 0 0 0 6.47348,-11.19217 l -54.10833,-93.7683 -54.12785,-93.74883 a 7.4746049,7.4746049 0 0 0 -1.40389,-1.75487 z m -5.08917,20.45394 47.65436,82.51769 47.65444,82.55672 -95.3088,-3e-5 -95.30869,0 47.65437,-82.55669 47.65432,-82.51769 z" style="color:#000000; fill:#ff0000; stroke-width:17" /&gt;</p> 
+							<p>&lt;/svg&gt;</p>
+							<p>&lt;/body&gt;</p>
+						</div>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td class="table">Advantages</td>
+								<td class="table">Disadvantages</td>
+							</tr>
+							<tr>
+								<td>
+									 <li>
+										no loading of external files
+									 </li>
+									 <li>
+										you can change the properties of SVG elements via CSS or JS
+									 </li>
+									 <li>
+										SVG animations and filters are supported
+									 </li>
+									 <li>
+										interactive animations are supported
+									 </li>
+									 <li>
+										the ability to reuse elements
+									 </li>
+								</td>
+								<td>
+									<li>
+										page code gets dirty
+									</li>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>
+							SVG as an &lt;object&gt;
+						</h3>
+						<table>
+							<tr>
+								<td class="table">
+									<code>
+										&lt;object type="image/svg+xml" data="happy.svg" width="300" height="300" class=”icon”&gt; &lt;/object&gt;
+									</code>
+								</td>
+								<td class="table">
+									<em>Advantages:</em>
+									<li>
+										you can use an external CSS file to manage styles
+									</li>
+									<li>
+										SVG animations and filters are supported
+									</li>
+									<li>
+										interactive animations are supported
+									 </li>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>
+							SVG as an &lt;iframe&gt;
+						</h3>
+						<table>
+							<tr>
+								<td class="table">
+									<p>&lt;body&gt;</p> 
+									<p>&lt;iframe src="happy.svg" width="400px" height="400px"&gt;&lt;/iframe&gt;</p>
+									<p>&lt;/body&gt;</p>
+								</td>
+								<td class="table">
+									&lt;iframe&gt; can be difficult to maintain and will be bad for your site's Search Engine Optimization (SEO).
+								</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>The End</section>
 			</div>
 		</div>
 
